@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { MapPin, BookOpen, Code2, Users } from "lucide-react";
 
 const stats = [
-  { label: "Projects", value: "3" },
+  { label: "Projects", value: "4" },
+  { label: "IPK", value: "3.92" },
   { label: "Org Roles", value: "3" },
-  { label: "Languages", value: "2+" },
   { label: "Internship Ready", value: "Yes" },
 ];
 
@@ -75,7 +75,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Right: Info cards */}
+          {/* Right: Photo + Info cards */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -84,6 +84,20 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-4"
           >
+            {/* Profile photo */}
+            <div className="flex justify-center mb-2">
+              <div
+                className="relative w-36 h-36 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-lg"
+                style={{ boxShadow: "0 0 32px rgba(59,130,246,0.18)" }}
+              >
+                <img
+                  src="/profile.png"
+                  alt="Ilham Farhanul Hakim"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+
             {info.map((item, i) => (
               <motion.div
                 key={item.label}
@@ -109,7 +123,7 @@ export default function About() {
               <p className="text-xs text-secondary uppercase tracking-wider font-semibold mb-2">Current Focus</p>
               <p className="text-sm text-foreground">Backend Development & System Analysis</p>
               <div className="flex flex-wrap gap-2 mt-3">
-                {["Laravel", "PHP", "MySQL", "Python", "REST API"].map((tag) => (
+                {["PHP", "Laravel", "HTML", "CSS", "MySQL", "JavaScript"].map((tag) => (
                   <span
                     key={tag}
                     className="px-2.5 py-1 rounded-md text-xs font-medium bg-secondary/10 text-secondary border border-secondary/20"

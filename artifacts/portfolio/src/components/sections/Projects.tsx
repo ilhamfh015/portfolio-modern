@@ -1,44 +1,41 @@
 import { motion } from "framer-motion";
-import { ExternalLink, FileText, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "QR Attendance System",
+    title: "AgroMart E-Commerce System",
+    role: "System Designer",
     description:
-      "Sistem absensi berbasis QR Code dengan dynamic token, GPS validation, device restriction, dan realtime attendance management.",
-    tech: ["Laravel", "MySQL", "Vite", "html5-qrcode"],
-    features: ["Dynamic QR Token", "GPS Validation", "Device Detection", "Admin Dashboard", "Realtime Attendance"],
+      "Platform e-commerce berbasis web yang dirancang untuk membantu proses penjualan dan pengelolaan produk pertanian secara digital. Bertanggung jawab dalam perancangan alur sistem, struktur database, analisis kebutuhan, serta desain proses bisnis aplikasi.",
+    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Bootstrap"],
+    gradient: "from-emerald-500 to-teal-500",
+    glowColor: "rgba(16,185,129,0.15)",
+  },
+  {
+    title: "QR Attendance System",
+    role: "Backend & System Developer",
+    description:
+      "Sistem absensi berbasis QR Code untuk kebutuhan kampus atau organisasi dengan fokus pada keamanan, validasi lokasi, dan pengelolaan absensi secara realtime. Menggunakan dynamic QR token untuk meminimalkan penyalahgunaan absensi serta mendukung validasi perangkat dan lokasi pengguna.",
+    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Vite", "html5-qrcode"],
     gradient: "from-blue-500 to-cyan-500",
     glowColor: "rgba(59,130,246,0.15)",
-    buttons: [
-      { label: "Live Demo", icon: <ExternalLink size={14} />, disabled: true, variant: "default" as const },
-      { label: "Case Study", icon: <FileText size={14} />, disabled: false, variant: "ghost" as const },
-    ],
   },
   {
     title: "UMKM Financial System",
+    role: "Web Developer & System Analyst",
     description:
-      "Sistem keuangan UMKM berbasis web untuk pengelolaan transaksi, laporan laba rugi, pengelolaan stok, dan export data.",
-    tech: ["Laravel", "MySQL", "Bootstrap"],
-    features: ["Transaction Management", "Financial Reports", "Stock Management", "Export PDF & Excel"],
-    gradient: "from-emerald-500 to-teal-500",
-    glowColor: "rgba(16,185,129,0.15)",
-    buttons: [
-      { label: "Case Study", icon: <FileText size={14} />, disabled: false, variant: "ghost" as const },
-    ],
+      "Sistem keuangan berbasis web untuk membantu pengelolaan transaksi dan laporan keuangan UMKM secara digital. Mendukung pencatatan pemasukan dan pengeluaran, pengelolaan stok, serta pembuatan laporan keuangan untuk monitoring bisnis yang lebih efisien.",
+    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Bootstrap"],
+    gradient: "from-violet-500 to-purple-500",
+    glowColor: "rgba(139,92,246,0.15)",
   },
   {
     title: "Trading Analysis Engine",
+    role: "Python Developer",
     description:
-      "Trading analysis engine berbasis Python dengan market structure analysis, EMA trend filtering, RSI momentum analysis, dan liquidity sweep detection.",
-    tech: ["Python", "MetaTrader5 API", "Pandas"],
-    features: ["Market Structure Analysis", "EMA & RSI Logic", "Liquidity Sweep Detection", "Automated Signal Logic"],
-    gradient: "from-violet-500 to-purple-500",
-    glowColor: "rgba(139,92,246,0.15)",
-    buttons: [
-      { label: "Case Study", icon: <FileText size={14} />, disabled: false, variant: "ghost" as const },
-    ],
+      "Trading analysis engine berbasis Python untuk analisis market structure, trend, momentum, dan liquidity pada market forex menggunakan integrasi MetaTrader5 API. Dirancang untuk membantu proses monitoring market dan analisis trading secara lebih terstruktur.",
+    tech: ["Python", "Pandas", "NumPy", "MetaTrader5 API"],
+    gradient: "from-orange-500 to-amber-500",
+    glowColor: "rgba(249,115,22,0.15)",
   },
 ];
 
@@ -68,7 +65,7 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -76,7 +73,7 @@ export default function Projects() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.1 }}
               variants={fadeUp}
-              transition={{ duration: 0.6, delay: i * 0.12 }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
               data-testid={`project-card-${i}`}
               className="relative group flex flex-col rounded-2xl border border-border/60 bg-card/40 backdrop-blur-sm overflow-hidden hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
               style={{ boxShadow: `0 8px 32px ${project.glowColor}` }}
@@ -84,29 +81,19 @@ export default function Projects() {
               {/* Top gradient bar */}
               <div className={`h-1 w-full bg-gradient-to-r ${project.gradient}`} />
 
-              {/* Thumbnail placeholder */}
-              <div className="relative h-44 overflow-hidden bg-background/50">
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-10`} />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-6 font-mono text-xs text-muted-foreground space-y-1 opacity-70">
-                    {project.tech.map((t) => (
-                      <div key={t} className="flex items-center gap-2">
-                        <span className="text-primary">›</span>
-                        <span>{t}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                {/* Role badge */}
+                <span className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full bg-gradient-to-r ${project.gradient} text-white mb-3 opacity-90`}>
+                  {project.role}
+                </span>
+
+                <h3 className="text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-5 flex-1">{project.description}</p>
 
                 {/* Tech stack badges */}
-                <div className="flex flex-wrap gap-2 mb-5">
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((t) => (
                     <span
                       key={t}
@@ -114,33 +101,6 @@ export default function Projects() {
                     >
                       {t}
                     </span>
-                  ))}
-                </div>
-
-                {/* Features */}
-                <div className="space-y-1.5 mb-6 flex-1">
-                  {project.features.map((f) => (
-                    <div key={f} className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <CheckCircle2 size={13} className="text-secondary shrink-0" />
-                      <span>{f}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Buttons */}
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.buttons.map((btn) => (
-                    <Button
-                      key={btn.label}
-                      size="sm"
-                      variant={btn.variant}
-                      disabled={btn.disabled}
-                      data-testid={`project-${i}-btn-${btn.label.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="text-xs rounded-lg"
-                    >
-                      {btn.icon}
-                      <span className="ml-1.5">{btn.label}</span>
-                    </Button>
                   ))}
                 </div>
               </div>

@@ -1,0 +1,146 @@
+# AgroMart E-Commerce System
+
+## Role
+
+System Designer
+
+## Description
+
+AgroMart merupakan platform e-commerce berbasis web yang dirancang untuk membantu proses penjualan dan pengelolaan produk pertanian secara digital. Dalam project ini, saya berperan sebagai System Designer yang bertanggung jawab dalam perancangan alur sistem, struktur database, analisis kebutuhan sistem, serta desain proses bisnis aplikasi agar berjalan secara efektif dan terstruktur.
+
+## Features
+
+* Product Management
+* Shopping Cart
+* User Authentication
+* Transaction System
+* Order Management
+* Responsive User Interface
+
+## Programming Languages & Technologies
+
+* PHP
+* Laravel
+* MySQL
+* JavaScript
+* HTML5
+* CSS3
+* Bootstrap
+
+## Tools
+
+* VS Code
+* Laragon
+* Composer
+* Draw.io
+* Visual Paradigm
+
+---
+
+# QR Attendance System
+
+## Role
+
+Backend & System Developer
+
+## Description
+
+Sistem absensi berbasis QR Code yang dikembangkan untuk kebutuhan kampus atau organisasi dengan fokus pada keamanan, validasi lokasi, dan pengelolaan absensi secara realtime. Sistem menggunakan dynamic QR token untuk meminimalkan penyalahgunaan absensi serta mendukung validasi perangkat dan lokasi pengguna.
+
+## Features
+
+* Dynamic QR Token
+* GPS Radius Validation
+* Device Detection
+* Realtime Attendance Monitoring
+* Admin Dashboard
+* Session Management
+* QR Scanner Integration
+
+## Programming Languages & Technologies
+
+* PHP
+* Laravel
+* MySQL
+* JavaScript
+* HTML5
+* CSS3
+* Vite
+* html5-qrcode
+
+## Tools
+
+* VS Code
+* Laragon
+* Composer
+* Draw.io
+
+---
+
+# UMKM Financial System
+
+## Role
+
+Web Developer & System Analyst
+
+## Description
+
+Sistem keuangan berbasis web yang dirancang untuk membantu pengelolaan transaksi dan laporan keuangan UMKM secara digital. Sistem mendukung pencatatan pemasukan dan pengeluaran, pengelolaan stok, serta pembuatan laporan keuangan untuk membantu proses monitoring bisnis menjadi lebih efisien.
+
+## Features
+
+* Transaction Management
+* Financial Reports
+* Profit & Loss Report
+* Stock Management
+* Export PDF & Excel
+* Daily Cash Report
+
+## Programming Languages & Technologies
+
+* PHP
+* Laravel
+* MySQL
+* JavaScript
+* HTML5
+* CSS3
+* Bootstrap
+
+## Tools
+
+* VS Code
+* Laragon
+* Composer
+
+---
+
+# Trading Analysis Engine
+
+## Role
+
+Python Developer
+
+## Description
+
+Trading analysis engine berbasis Python yang digunakan untuk melakukan analisis market structure, trend, momentum, dan liquidity pada market forex menggunakan integrasi MetaTrader5 API. Sistem dirancang untuk membantu proses monitoring market dan analisis trading secara lebih terstruktur.
+
+## Features
+
+* Market Structure Analysis
+* EMA Trend Detection
+* RSI Momentum Analysis
+* Liquidity Sweep Detection
+* Signal Analysis
+* Automated Market Monitoring
+
+## Programming Languages & Technologies
+
+* Python
+* Pandas
+* NumPy
+* MetaTrader5 API
+
+## Tools
+
+* VS Code
+* MetaTrader 5

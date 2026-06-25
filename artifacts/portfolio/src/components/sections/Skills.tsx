@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import {
   SiPhp, SiLaravel, SiMysql, SiGit, SiGithub, SiVite,
-  SiTailwindcss, SiBootstrap, SiHtml5, SiJavascript
+  SiBootstrap, SiHtml5, SiJavascript
 } from "react-icons/si";
-import { Database, Code2, Wrench, Cpu, Globe, Terminal, FileCode } from "lucide-react";
+import { Database, Code2, Wrench, Globe, Terminal, FileCode, ClipboardList } from "lucide-react";
 
 const categories = [
   {
@@ -15,8 +15,6 @@ const categories = [
       { name: "PHP", icon: <SiPhp size={18} /> },
       { name: "Laravel", icon: <SiLaravel size={18} /> },
       { name: "REST API", icon: <Globe size={18} /> },
-      { name: "Authentication", icon: <Cpu size={18} /> },
-      { name: "Session Management", icon: <Cpu size={18} /> },
     ],
   },
   {
@@ -28,20 +26,16 @@ const categories = [
       { name: "HTML", icon: <SiHtml5 size={18} /> },
       { name: "CSS", icon: <FileCode size={18} /> },
       { name: "JavaScript", icon: <SiJavascript size={18} /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss size={18} /> },
       { name: "Bootstrap", icon: <SiBootstrap size={18} /> },
     ],
   },
   {
-    title: "Database & System Design",
+    title: "Database",
     icon: <Database size={20} />,
     color: "from-violet-500/20 to-violet-600/5",
     borderColor: "hover:border-violet-500/40",
     skills: [
       { name: "MySQL", icon: <SiMysql size={18} /> },
-      { name: "ERD", icon: <Database size={18} /> },
-      { name: "UML", icon: <Database size={18} /> },
-      { name: "Relational DB", icon: <Database size={18} /> },
     ],
   },
   {
@@ -55,6 +49,18 @@ const categories = [
       { name: "Composer", icon: <Terminal size={18} /> },
       { name: "Vite", icon: <SiVite size={18} /> },
       { name: "VS Code", icon: <FileCode size={18} /> },
+    ],
+  },
+  {
+    title: "Project Management",
+    icon: <ClipboardList size={20} />,
+    color: "from-pink-500/20 to-pink-600/5",
+    borderColor: "hover:border-pink-500/40",
+    skills: [
+      { name: "System Planning", icon: <ClipboardList size={18} /> },
+      { name: "Requirement Analysis", icon: <ClipboardList size={18} /> },
+      { name: "Technical Planning", icon: <ClipboardList size={18} /> },
+      { name: "Workflow Design", icon: <ClipboardList size={18} /> },
     ],
   },
 ];

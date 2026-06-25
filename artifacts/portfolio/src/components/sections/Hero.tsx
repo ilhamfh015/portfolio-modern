@@ -48,8 +48,11 @@ export default function Hero() {
               size="lg" 
               variant="outline"
               className="border-border hover:bg-card font-medium rounded-md"
+              asChild
             >
-              <Download className="mr-2 h-4 w-4" /> Download CV
+              <a href="/CV_Ilham_Farhanul_Hakim.pdf" download>
+                <Download className="mr-2 h-4 w-4" /> Download CV
+              </a>
             </Button>
             <Button 
               size="lg" 
