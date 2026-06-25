@@ -1,9 +1,7 @@
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const socials = [
-  { icon: <Github size={18} />, href: "https://github.com/ilhamfarhanul", label: "GitHub" },
-  { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/ilhamfarhanul", label: "LinkedIn" },
-  { icon: <Instagram size={18} />, href: "https://instagram.com/ilhamfarhanul", label: "Instagram" },
+  { icon: <Instagram size={18} />, href: "https://instagram.com/lilhamm._", label: "Instagram" },
 ];
 
 export default function Footer() {

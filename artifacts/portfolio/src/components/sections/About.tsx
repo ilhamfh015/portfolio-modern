@@ -53,14 +53,10 @@ export default function About() {
             >
               <div className="absolute -top-px left-8 right-8 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
               <p className="text-muted-foreground leading-relaxed text-base" data-testid="about-text">
-                Saya adalah mahasiswa Sistem Informasi yang memiliki minat pada backend development, system analysis,
-                dan pengembangan aplikasi berbasis web menggunakan Laravel. Selain aktif dalam organisasi kampus, saya
-                juga memiliki pengalaman membangun project sistem nyata seperti QR Attendance System, Financial System
-                UMKM, dan automation trading analysis menggunakan Python dan MetaTrader5 API.
-              </p>
-              <p className="text-muted-foreground leading-relaxed text-base mt-4">
-                Saya senang membangun sistem yang tidak hanya berjalan dengan baik, tetapi juga memiliki struktur,
-                logika, dan pengalaman pengguna yang jelas.
+                Mahasiswa Sistem Informasi Universitas Bina Sarana Informatika Tasikmalaya yang berfokus pada backend
+                development, system analysis, dan pengembangan aplikasi berbasis web. Aktif dalam organisasi kampus
+                serta memiliki pengalaman membangun berbagai project menggunakan Laravel, MySQL, dan Python dalam
+                pengembangan solusi digital.
               </p>
             </div>
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, Github, Linkedin, Instagram, Send } from "lucide-react";
+import { Mail, Phone, Instagram, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -28,32 +28,20 @@ const contactLinks = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "ilhamfarhanul@email.com",
-    href: "mailto:ilhamfarhanul@email.com",
+    value: "ilhamfh015@gmail.com",
+    href: "mailto:ilhamfh015@gmail.com",
   },
   {
     icon: <Phone size={18} />,
     label: "WhatsApp",
-    value: "+62 xxx-xxxx-xxxx",
-    href: "https://wa.me/62",
-  },
-  {
-    icon: <Github size={18} />,
-    label: "GitHub",
-    value: "github.com/ilhamfarhanul",
-    href: "https://github.com/ilhamfarhanul",
-  },
-  {
-    icon: <Linkedin size={18} />,
-    label: "LinkedIn",
-    value: "linkedin.com/in/ilhamfarhanul",
-    href: "https://linkedin.com/in/ilhamfarhanul",
+    value: "+62 859-4303-9420",
+    href: "https://wa.me/6285943039420",
   },
   {
     icon: <Instagram size={18} />,
     label: "Instagram",
-    value: "@ilhamfarhanul",
-    href: "https://instagram.com/ilhamfarhanul",
+    value: "@lilhamm._",
+    href: "https://instagram.com/lilhamm._",
   },
 ];
 
@@ -93,7 +81,7 @@ export default function Contact() {
           className="mb-14 text-center"
         >
           <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Contact</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">Get In Touch</h2>
           <p className="text-muted-foreground mt-4 max-w-md mx-auto text-sm">
             Open for internship, collaboration, and project opportunities.
           </p>

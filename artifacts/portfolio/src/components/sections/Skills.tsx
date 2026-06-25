@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  SiPhp, SiLaravel, SiMysql, SiPython, SiGit, SiGithub, SiVite,
+  SiPhp, SiLaravel, SiMysql, SiGit, SiGithub, SiVite,
   SiTailwindcss, SiBootstrap, SiHtml5, SiJavascript
 } from "react-icons/si";
 import { Database, Code2, Wrench, Cpu, Globe, Terminal, FileCode } from "lucide-react";
@@ -55,19 +55,6 @@ const categories = [
       { name: "Composer", icon: <Terminal size={18} /> },
       { name: "Vite", icon: <SiVite size={18} /> },
       { name: "VS Code", icon: <FileCode size={18} /> },
-    ],
-  },
-  {
-    title: "Other Technical Skills",
-    icon: <Cpu size={20} />,
-    color: "from-rose-500/20 to-rose-600/5",
-    borderColor: "hover:border-rose-500/40",
-    skills: [
-      { name: "QR Code System", icon: <Cpu size={18} /> },
-      { name: "GPS Validation", icon: <Cpu size={18} /> },
-      { name: "Python", icon: <SiPython size={18} /> },
-      { name: "MetaTrader5 API", icon: <Cpu size={18} /> },
-      { name: "Trading Analysis", icon: <Cpu size={18} /> },
     ],
   },
 ];

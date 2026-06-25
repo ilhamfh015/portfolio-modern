@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, FileText, CheckCircle2 } from "lucide-react";
+import { ExternalLink, FileText, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -13,7 +13,6 @@ const projects = [
     glowColor: "rgba(59,130,246,0.15)",
     buttons: [
       { label: "Live Demo", icon: <ExternalLink size={14} />, disabled: true, variant: "default" as const },
-      { label: "GitHub", icon: <Github size={14} />, disabled: false, variant: "outline" as const },
       { label: "Case Study", icon: <FileText size={14} />, disabled: false, variant: "ghost" as const },
     ],
   },
@@ -26,7 +25,6 @@ const projects = [
     gradient: "from-emerald-500 to-teal-500",
     glowColor: "rgba(16,185,129,0.15)",
     buttons: [
-      { label: "GitHub", icon: <Github size={14} />, disabled: false, variant: "outline" as const },
       { label: "Case Study", icon: <FileText size={14} />, disabled: false, variant: "ghost" as const },
     ],
   },
@@ -39,7 +37,6 @@ const projects = [
     gradient: "from-violet-500 to-purple-500",
     glowColor: "rgba(139,92,246,0.15)",
     buttons: [
-      { label: "GitHub", icon: <Github size={14} />, disabled: false, variant: "outline" as const },
       { label: "Case Study", icon: <FileText size={14} />, disabled: false, variant: "ghost" as const },
     ],
   },
