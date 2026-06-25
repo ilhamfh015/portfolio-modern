@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import {
   SiPhp, SiLaravel, SiMysql, SiPython, SiGit, SiGithub, SiVite,
-  SiTailwindcss, SiBootstrap, SiHtml5, SiCss3, SiJavascript, SiComposer, SiVisualstudiocode
+  SiTailwindcss, SiBootstrap, SiHtml5, SiJavascript
 } from "react-icons/si";
-import { Database, Code2, Wrench, Cpu, Globe } from "lucide-react";
+import { Database, Code2, Wrench, Cpu, Globe, Terminal, FileCode } from "lucide-react";
 
 const categories = [
   {
@@ -26,7 +26,7 @@ const categories = [
     borderColor: "hover:border-emerald-500/40",
     skills: [
       { name: "HTML", icon: <SiHtml5 size={18} /> },
-      { name: "CSS", icon: <SiCss3 size={18} /> },
+      { name: "CSS", icon: <FileCode size={18} /> },
       { name: "JavaScript", icon: <SiJavascript size={18} /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss size={18} /> },
       { name: "Bootstrap", icon: <SiBootstrap size={18} /> },
@@ -52,9 +52,9 @@ const categories = [
     skills: [
       { name: "Git", icon: <SiGit size={18} /> },
       { name: "GitHub", icon: <SiGithub size={18} /> },
-      { name: "Composer", icon: <SiComposer size={18} /> },
+      { name: "Composer", icon: <Terminal size={18} /> },
       { name: "Vite", icon: <SiVite size={18} /> },
-      { name: "VS Code", icon: <SiVisualstudiocode size={18} /> },
+      { name: "VS Code", icon: <FileCode size={18} /> },
     ],
   },
   {
