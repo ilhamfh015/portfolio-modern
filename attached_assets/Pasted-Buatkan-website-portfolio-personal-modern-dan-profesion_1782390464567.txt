@@ -1,0 +1,401 @@
+Buatkan website portfolio personal modern dan profesional untuk mahasiswa Sistem Informasi bernama “Ilham Farhanul Hakim”.
+
+# TUJUAN WEBSITE
+Website ini digunakan untuk:
+- portfolio pribadi,
+- kebutuhan PKL/magang,
+- menunjukkan skill technical,
+- menampilkan pengalaman organisasi,
+- serta project development yang pernah dibuat.
+
+Website harus terlihat:
+- modern,
+- clean,
+- professional,
+- responsive,
+- minimalis,
+- dan cocok untuk recruiter atau HR.
+
+JANGAN buat desain yang terlalu gaming, terlalu neon, atau terlalu ramai animasi.
+
+Gunakan style:
+- dark modern minimal,
+- smooth animation,
+- clean typography,
+- professional developer portfolio.
+
+# TECH STACK
+Gunakan:
+- Laravel
+- Blade Template
+- Tailwind CSS
+- Vite
+- JavaScript
+
+Gunakan struktur code yang rapi, reusable, dan clean.
+
+# COLOR PALETTE
+Gunakan warna:
+- Background utama: #0F172A
+- Secondary background/card: #1E293B
+- Primary color: #3B82F6
+- Accent color: #10B981
+- Text utama: #F8FAFC
+- Text secondary: #CBD5E1
+
+Style harus elegant dan modern.
+
+# TYPOGRAPHY
+Gunakan font modern seperti:
+- Poppins
+atau
+- Inter
+
+Pastikan spacing dan hierarchy typography sangat rapi.
+
+# WEBSITE STRUCTURE
+
+Buat website single-page portfolio dengan navbar smooth scrolling.
+
+Navbar:
+- Home
+- About
+- Skills
+- Projects
+- Experience
+- Contact
+
+Navbar harus:
+- sticky,
+- transparent saat di atas,
+- berubah solid ketika scroll.
+
+Tambahkan smooth scrolling.
+
+# HERO SECTION
+
+Buat hero section modern dengan layout 2 kolom.
+
+Kiri:
+- nama besar,
+- role,
+- deskripsi,
+- CTA button.
+
+Kanan:
+- foto profile placeholder modern,
+- atau abstract developer illustration.
+
+ISI HERO:
+
+Nama:
+Ilham Farhanul Hakim
+
+Role:
+Information Systems Student | Backend & System Development Enthusiast
+
+Description:
+Mahasiswa Sistem Informasi Universitas Bina Sarana Informatika Tasikmalaya yang berfokus pada backend development, web application development, dan system analysis. Aktif dalam organisasi kampus serta memiliki pengalaman membangun berbagai project berbasis Laravel dan automation logic menggunakan Python.
+
+Buttons:
+- View Projects
+- Download CV
+- Contact Me
+
+Tambahkan:
+- subtle glow,
+- gradient,
+- smooth fade animation.
+
+Jangan berlebihan.
+
+# ABOUT SECTION
+
+Buat section about modern dengan card layout.
+
+Tampilkan:
+- foto/profile card,
+- informasi singkat,
+- stats kecil.
+
+Informasi:
+- University: Universitas Bina Sarana Informatika
+- Major: Sistem Informasi
+- Focus: Backend Development & System Analysis
+- Organization: Wakil Presiden BEM UBSI Tasikmalaya
+
+About text:
+
+“Saya adalah mahasiswa Sistem Informasi yang memiliki minat pada backend development, system analysis, dan pengembangan aplikasi berbasis web menggunakan Laravel. Selain aktif dalam organisasi kampus, saya juga memiliki pengalaman membangun project sistem nyata seperti QR Attendance System, Financial System UMKM, dan automation trading analysis menggunakan Python dan MetaTrader5 API.
+
+Saya senang membangun sistem yang tidak hanya berjalan dengan baik, tetapi juga memiliki struktur, logika, dan pengalaman pengguna yang jelas.”
+
+Tambahkan:
+- glassmorphism effect ringan,
+- hover effect modern.
+
+# SKILLS SECTION
+
+Buat skill section menggunakan modern cards/grid.
+
+JANGAN gunakan progress bar palsu.
+
+Kategori skill:
+
+1. Backend Development
+- PHP
+- Laravel
+- REST API
+- Authentication
+- Session Management
+
+2. Frontend Development
+- HTML
+- CSS
+- JavaScript
+- Tailwind CSS
+- Bootstrap
+
+3. Database & System Design
+- MySQL
+- ERD
+- UML
+- Relational Database
+
+4. Tools & Environment
+- Git
+- GitHub
+- Composer
+- Laragon
+- Vite
+- VS Code
+
+5. Other Technical Skills
+- QR Code System
+- GPS Validation
+- Python Automation
+- MetaTrader5 API
+- Trading Analysis Logic
+
+Gunakan:
+- hover animation,
+- icon modern,
+- responsive grid.
+
+# PROJECTS SECTION
+
+Ini adalah section TERPENTING.
+
+Buat featured projects modern menggunakan cards besar dengan image thumbnail placeholder.
+
+Setiap project memiliki:
+- image,
+- title,
+- description,
+- tech stack,
+- features,
+- buttons.
+
+Gunakan hover animation modern.
+
+# PROJECT 1
+
+Title:
+QR Attendance System
+
+Tech Stack:
+Laravel • MySQL • Vite • html5-qrcode
+
+Description:
+Sistem absensi berbasis QR Code dengan dynamic token, GPS validation, device restriction, dan realtime attendance management.
+
+Features:
+- Dynamic QR Token
+- GPS Validation
+- Device Detection
+- Admin Dashboard
+- Realtime Attendance
+
+Buttons:
+- Live Demo
+- GitHub
+- Case Study
+
+# PROJECT 2
+
+Title:
+UMKM Financial System
+
+Tech Stack:
+Laravel • MySQL • Bootstrap
+
+Description:
+Sistem keuangan UMKM berbasis web untuk pengelolaan transaksi, laporan laba rugi, pengelolaan stok, dan export data.
+
+Features:
+- Transaction Management
+- Financial Reports
+- Stock Management
+- Export PDF & Excel
+
+# PROJECT 3
+
+Title:
+Trading Analysis Engine
+
+Tech Stack:
+Python • MetaTrader5 API • Pandas
+
+Description:
+Trading analysis engine berbasis Python dengan market structure analysis, EMA trend filtering, RSI momentum analysis, dan liquidity sweep detection.
+
+Features:
+- Market Structure Analysis
+- EMA & RSI Logic
+- Liquidity Sweep Detection
+- Automated Signal Logic
+
+# EXPERIENCE SECTION
+
+Gunakan vertical timeline modern.
+
+Data:
+
+1.
+Wakil Presiden BEM UBSI Tasikmalaya
+2026 - Present
+
+Deskripsi:
+- Mengelola koordinasi internal organisasi
+- Membantu pengambilan keputusan kegiatan kampus
+- Mengatur komunikasi antar kementerian
+
+2.
+Ketua Pelaksana — BSI Flash
+2026
+
+Deskripsi:
+- Mengatur konsep acara
+- Koordinasi panitia
+- Sosialisasi ke sekolah
+
+3.
+Secretary — UKM Bahasa
+2025
+
+Deskripsi:
+- Administrasi organisasi
+- Dokumentasi kegiatan
+- Pengelolaan surat dan arsip
+
+Gunakan:
+- modern timeline,
+- glowing timeline point,
+- fade animation.
+
+# CERTIFICATE SECTION
+
+Buat section certificate sederhana dengan modern card layout.
+
+Tambahkan placeholder certificate.
+
+# CONTACT SECTION
+
+Buat contact section modern.
+
+Isi:
+- Email
+- WhatsApp
+- GitHub
+- LinkedIn
+- Instagram
+
+Tambahkan text:
+“Open for internship, collaboration, and project opportunities.”
+
+Tambahkan contact form modern.
+
+# FOOTER
+
+Footer clean minimal.
+
+Isi:
+- nama,
+- copyright,
+- social links.
+
+# RESPONSIVE DESIGN
+
+WAJIB:
+- fully responsive,
+- mobile optimized,
+- tablet optimized,
+- desktop optimized.
+
+Pastikan:
+- spacing rapi,
+- typography konsisten,
+- tidak overflow.
+
+# ANIMATION
+
+Gunakan animation ringan:
+- fade up,
+- hover scale,
+- smooth transition,
+- scroll reveal.
+
+JANGAN:
+- particle berlebihan,
+- animasi gaming,
+- animasi berat.
+
+# EXTRA FEATURES
+
+Tambahkan:
+- dark modern background gradient,
+- smooth scrolling,
+- active navbar indicator,
+- scroll to top button,
+- loading animation ringan.
+
+# CODE QUALITY
+
+WAJIB:
+- clean code,
+- reusable components,
+- section dipisah,
+- folder structure rapi,
+- responsive utility Tailwind,
+- semantic HTML.
+
+# FILE STRUCTURE
+
+Gunakan struktur:
+
+resources/
+ ├── views/
+ │    ├── sections/
+ │    │     ├── hero.blade.php
+ │    │     ├── about.blade.php
+ │    │     ├── skills.blade.php
+ │    │     ├── projects.blade.php
+ │    │     ├── experience.blade.php
+ │    │     ├── certificates.blade.php
+ │    │     ├── contact.blade.php
+ │    │     └── footer.blade.php
+ │    └── welcome.blade.php
+
+Pastikan semua section di-include dengan rapi.
+
+# OUTPUT YANG DIINGINKAN
+
+Saya ingin hasil akhir:
+- terlihat seperti portfolio developer modern premium,
+- clean,
+- recruiter friendly,
+- professional,
+- dan benar-benar siap deploy.
+
+Jangan buat template biasa.
+Buat terasa personal, modern, dan premium.
