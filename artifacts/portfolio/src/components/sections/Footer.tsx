@@ -14,7 +14,7 @@ export default function Footer() {
           <span className="font-bold text-primary">IFH</span>
           <span className="text-secondary font-bold">.</span>
           <p className="text-xs text-muted-foreground mt-1">
-            &copy; {year} Ilham Farhanul Hakim. All rights reserved.
+            &copy; {year} Ilham Farhanul Hakim. Hak cipta dilindungi.
           </p>
         </div>
 

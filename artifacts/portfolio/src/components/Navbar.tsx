@@ -4,12 +4,12 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Experience", href: "#experience" },
-  { name: "Contact", href: "#contact" },
+  { name: "Beranda", href: "#home" },
+  { name: "Tentang", href: "#about" },
+  { name: "Keahlian", href: "#skills" },
+  { name: "Proyek", href: "#projects" },
+  { name: "Pengalaman", href: "#experience" },
+  { name: "Kontak", href: "#contact" },
 ];
 
 export default function Navbar() {

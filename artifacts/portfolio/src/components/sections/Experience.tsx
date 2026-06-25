@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     role: "Wakil Presiden BEM UBSI Tasikmalaya",
-    period: "2026 – Present",
-    type: "Leadership",
+    period: "2026 – Sekarang",
+    type: "Kepemimpinan",
     points: [
       "Mengelola koordinasi internal organisasi",
       "Membantu pengambilan keputusan kegiatan kampus",
@@ -15,7 +15,7 @@ const experiences = [
   {
     role: "Ketua Pelaksana — BSI Flash",
     period: "2026",
-    type: "Event Management",
+    type: "Manajemen Acara",
     points: [
       "Mengatur konsep acara",
       "Koordinasi panitia",
@@ -24,9 +24,9 @@ const experiences = [
     accent: "secondary",
   },
   {
-    role: "Secretary — UKM Bahasa",
+    role: "Sekretaris — UKM Bahasa",
     period: "2025",
-    type: "Administration",
+    type: "Administrasi",
     points: [
       "Administrasi organisasi",
       "Dokumentasi kegiatan",
@@ -55,8 +55,8 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           className="mb-14 text-center"
         >
-          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Experience</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Organizational Journey</h2>
+          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Pengalaman</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Perjalanan Organisasi</h2>
         </motion.div>
 
         <div className="max-w-2xl mx-auto relative">

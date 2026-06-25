@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 import { MapPin, BookOpen, Code2, Users } from "lucide-react";
 
 const stats = [
-  { label: "Projects", value: "4" },
+  { label: "Proyek", value: "4" },
   { label: "IPK", value: "3.92" },
   { label: "Organisasi", value: "3" },
-  { label: "Internship Ready", value: "Yes" },
+  { label: "Siap Magang", value: "Ya" },
 ];
 
 const info = [
-  { icon: <BookOpen size={16} />, label: "University", value: "Universitas Bina Sarana Informatika" },
-  { icon: <MapPin size={16} />, label: "Location", value: "Tasikmalaya, Indonesia" },
-  { icon: <Code2 size={16} />, label: "Major", value: "Sistem Informasi" },
-  { icon: <Users size={16} />, label: "Organization", value: "Wakil Presiden BEM UBSI Tasikmalaya" },
+  { icon: <BookOpen size={16} />, label: "Universitas", value: "Universitas Bina Sarana Informatika" },
+  { icon: <MapPin size={16} />, label: "Lokasi", value: "Tasikmalaya, Indonesia" },
+  { icon: <Code2 size={16} />, label: "Jurusan", value: "Sistem Informasi" },
+  { icon: <Users size={16} />, label: "Organisasi", value: "Wakil Presiden BEM UBSI Tasikmalaya" },
 ];
 
 const container = {
@@ -53,8 +53,8 @@ export default function About() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="mb-14 text-center"
         >
-          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">About Me</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">The Person Behind the Code</h2>
+          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Tentang Saya</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Orang di Balik Kode</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -127,7 +127,7 @@ export default function About() {
               variants={slideLeft}
               className="p-5 rounded-xl border border-secondary/30 bg-secondary/5 backdrop-blur-sm"
             >
-              <p className="text-xs text-secondary uppercase tracking-wider font-semibold mb-2">Current Focus</p>
+              <p className="text-xs text-secondary uppercase tracking-wider font-semibold mb-2">Fokus Saat Ini</p>
               <p className="text-sm text-foreground">Backend Development & System Analysis</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {["PHP", "Laravel", "HTML", "CSS", "MySQL", "JavaScript"].map((tag, i) => (

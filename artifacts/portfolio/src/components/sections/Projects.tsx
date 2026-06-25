@@ -58,10 +58,10 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="mb-14 text-center"
         >
-          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Portfolio</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Featured Projects</h2>
+          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Portofolio</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Proyek Unggulan</h2>
           <p className="text-muted-foreground mt-4 max-w-md mx-auto text-sm">
-            Real systems built to solve real problems — each one a lesson in architecture, logic, and user experience.
+            Sistem nyata yang dibangun untuk menyelesaikan masalah nyata — setiap proyek mengajarkan tentang arsitektur, logika, dan pengalaman pengguna.
           </p>
         </motion.div>
 

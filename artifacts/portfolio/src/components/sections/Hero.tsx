@@ -33,11 +33,11 @@ export default function Hero() {
           className="max-w-2xl"
         >
           <motion.p variants={fadeUp} className="text-secondary font-medium tracking-wider mb-4 uppercase text-sm">
-            Backend & System Development Enthusiast
+            Mahasiswa Sistem Informasi · Backend Developer
           </motion.p>
 
           <motion.h1 variants={fadeUp} className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            Hi, I'm <br />
+            Halo, Saya <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-secondary">
               Ilham Farhanul Hakim
             </span>
@@ -55,7 +55,7 @@ export default function Hero() {
               onClick={() => scrollTo("projects")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium rounded-md"
             >
-              View Projects <ArrowRight className="ml-2 h-4 w-4" />
+              Lihat Proyek <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button
               size="lg"
@@ -73,7 +73,7 @@ export default function Hero() {
               onClick={() => scrollTo("contact")}
               className="text-muted-foreground hover:text-foreground font-medium rounded-md"
             >
-              <Mail className="mr-2 h-4 w-4" /> Contact Me
+              <Mail className="mr-2 h-4 w-4" /> Hubungi Saya
             </Button>
           </motion.div>
         </motion.div>

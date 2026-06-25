@@ -84,10 +84,10 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="mb-14 text-center"
         >
-          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Technical Skills</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">What I Work With</h2>
+          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Keahlian Teknis</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Yang Saya Kuasai</h2>
           <p className="text-muted-foreground mt-4 max-w-md mx-auto text-sm">
-            A breakdown of technologies and tools I use to build backend systems and web applications.
+            Teknologi dan tools yang saya gunakan untuk membangun sistem backend dan aplikasi berbasis web.
           </p>
         </motion.div>
 
