@@ -54,7 +54,7 @@ export default function About() {
           className="mb-14 text-center"
         >
           <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Tentang Saya</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Orang di Balik Kode</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">The Person Behind the Code</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
