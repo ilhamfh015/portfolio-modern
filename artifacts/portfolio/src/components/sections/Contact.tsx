@@ -58,13 +58,34 @@ export default function Contact() {
     defaultValues: { name: "", email: "", message: "" },
   });
 
-  const onSubmit = (data: ContactFormData) => {
-    console.log("Contact form submitted:", data);
-    toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    form.reset();
+  const onSubmit = async (data: ContactFormData) => {
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
+    if (!accessKey) {
+      toast({ title: "Konfigurasi belum selesai", description: "Access key belum diset.", variant: "destructive" });
+      return;
+    }
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `Portfolio Contact: pesan dari ${data.name}`,
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        }),
+      });
+      const json = await res.json();
+      if (json.success) {
+        toast({ title: "Pesan terkirim!", description: "Terima kasih, saya akan segera membalas." });
+        form.reset();
+      } else {
+        toast({ title: "Gagal mengirim", description: json.message ?? "Coba lagi.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Gagal mengirim", description: "Tidak ada koneksi internet.", variant: "destructive" });
+    }
   };
 
   return (
