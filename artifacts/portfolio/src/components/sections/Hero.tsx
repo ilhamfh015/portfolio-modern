@@ -12,11 +12,6 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
 
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.7, ease: "easeOut" } },
-};
-
 export default function Hero() {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -25,20 +20,12 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-[100dvh] flex items-center relative overflow-hidden pt-20">
-      {/* Animated background blobs */}
-      <motion.div
-        className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] pointer-events-none"
-        animate={{ scale: [1, 1.15, 1], opacity: [0.4, 0.6, 0.4] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"
-        animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
-        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-      />
+      {/* Background blobs — CSS animated, GPU-only */}
+      <div className="animate-blob absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="animate-blob-alt absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left: Text content */}
+        {/* Left: staggered text entrance (one-time, fine with Framer Motion) */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -91,40 +78,29 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Right: Profile photo */}
+        {/* Right: Profile photo — CSS animations only for loops */}
         <motion.div
-          variants={fadeIn}
-          initial="hidden"
-          animate="visible"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
           className="hidden lg:flex justify-center items-center relative"
         >
-          {/* Outer glow ring — slow pulse */}
-          <motion.div
-            className="absolute w-80 h-80 rounded-full bg-primary/10 blur-2xl"
-            animate={{ scale: [1, 1.12, 1], opacity: [0.5, 0.8, 0.5] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          />
+          {/* Glow blob behind photo — CSS pulse */}
+          <div className="animate-glow-pulse absolute w-80 h-80 rounded-full bg-primary/10 blur-2xl" />
 
-          {/* Rotating border ring */}
-          <motion.div
-            className="absolute w-72 h-72 rounded-full border border-primary/20"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          {/* Rotating ring — CSS spin */}
+          <div
+            className="animate-spin-slow absolute w-72 h-72 rounded-full border border-primary/20"
             style={{
-              background: "conic-gradient(from 0deg, transparent 70%, rgba(59,130,246,0.4) 100%)",
-              borderRadius: "50%",
+              background: "conic-gradient(from 0deg, transparent 70%, rgba(59,130,246,0.35) 100%)",
             }}
           />
 
-          {/* Photo — subtle float */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="relative z-10"
-          >
+          {/* Photo — CSS float */}
+          <div className="animate-float relative z-10">
             <div
               className="w-64 h-64 rounded-full overflow-hidden border-2 border-primary/40 shadow-2xl"
-              style={{ boxShadow: "0 0 60px rgba(59,130,246,0.25), 0 0 0 6px rgba(59,130,246,0.08)" }}
+              style={{ boxShadow: "0 0 60px rgba(59,130,246,0.22), 0 0 0 6px rgba(59,130,246,0.07)" }}
             >
               <img
                 src="/profile.png"
@@ -137,7 +113,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8, duration: 0.5 }}
+              transition={{ delay: 0.8, duration: 0.4 }}
               className="absolute -bottom-3 -right-4 bg-card border border-border/80 rounded-xl px-3 py-2 shadow-lg backdrop-blur-sm"
             >
               <p className="text-xs text-muted-foreground">IPK</p>
@@ -148,13 +124,13 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1, duration: 0.5 }}
+              transition={{ delay: 1, duration: 0.4 }}
               className="absolute -top-3 -left-6 bg-card border border-border/80 rounded-xl px-3 py-2 shadow-lg backdrop-blur-sm"
             >
               <p className="text-xs text-secondary font-semibold">Backend Dev</p>
               <p className="text-xs text-muted-foreground">Laravel · MySQL</p>
             </motion.div>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>

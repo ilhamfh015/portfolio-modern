@@ -218,3 +218,25 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.65; transform: scale(1.1); }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes blob-breathe {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50%       { opacity: 0.55; transform: scale(1.12); }
+}
+
+.animate-float      { animation: float       4s ease-in-out infinite; will-change: transform; }
+.animate-glow-pulse { animation: glow-pulse  5s ease-in-out infinite; will-change: transform, opacity; }
+.animate-spin-slow  { animation: spin-slow  20s linear       infinite; will-change: transform; }
+.animate-blob       { animation: blob-breathe 7s ease-in-out infinite; will-change: transform, opacity; }
+.animate-blob-alt   { animation: blob-breathe 9s ease-in-out infinite 2s; will-change: transform, opacity; }
