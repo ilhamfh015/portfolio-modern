@@ -1,115 +1,95 @@
 import { motion } from "framer-motion";
+import { BriefcaseBusiness, ClipboardCheck, UsersRound } from "lucide-react";
 
 const experiences = [
   {
-    role: "Wakil Presiden BEM UBSI Tasikmalaya",
-    period: "2026 – Sekarang",
-    type: "Kepemimpinan",
+    role: "Software Engineer Intern",
+    organization: "PT Padepokan Tujuh Sembilan",
+    period: "Agustus–November 2026 · Berlangsung",
+    type: "Magang",
+    icon: BriefcaseBusiness,
     points: [
-      "Mengelola koordinasi internal organisasi",
-      "Membantu pengambilan keputusan kegiatan kampus",
-      "Mengatur komunikasi antar kementerian",
+      "Memahami kebutuhan tugas dan menyelesaikannya di bawah arahan Project Manager.",
+      "Menggunakan tools digital untuk menangani informasi sistem dan kebutuhan tim.",
+      "Memeriksa serta memvalidasi hasil, lalu mendokumentasikan perubahan dan kendala.",
+      "Berkoordinasi dengan tim dan memantau pekerjaan hingga selesai dengan cermat.",
     ],
-    accent: "primary",
+  },
+  {
+    role: "Wakil Presiden",
+    organization: "BEM Universitas Bina Sarana Informatika",
+    period: "Organisasi kampus",
+    type: "Kepemimpinan & koordinasi",
+    icon: UsersRound,
+    points: ["Pengalaman organisasi sebagai Wakil Presiden BEM UBSI."],
+  },
+  {
+    role: "Sekretaris",
+    organization: "UKM Bahasa Inggris & Jepang",
+    period: "Organisasi kampus",
+    type: "Administrasi",
+    icon: ClipboardCheck,
+    points: ["Pengalaman organisasi sebagai Sekretaris UKM Bahasa Inggris & Jepang."],
   },
   {
     role: "Ketua Pelaksana — BSI Flash",
+    organization: "Kegiatan kampus",
     period: "2026",
-    type: "Manajemen Acara",
-    points: [
-      "Mengatur konsep acara",
-      "Koordinasi panitia",
-      "Sosialisasi ke sekolah",
-    ],
-    accent: "secondary",
-  },
-  {
-    role: "Sekretaris — UKM Bahasa",
-    period: "2025",
-    type: "Administrasi",
-    points: [
-      "Administrasi organisasi",
-      "Dokumentasi kegiatan",
-      "Pengelolaan surat dan arsip",
-    ],
-    accent: "primary",
+    type: "Koordinasi acara",
+    icon: UsersRound,
+    points: ["Mengatur konsep acara, koordinasi panitia, dan sosialisasi ke sekolah."],
   },
 ];
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
-
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
-
+    <section id="experience" className="section-rule py-24 md:py-28">
       <div className="container mx-auto px-6 md:px-12">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeUp}
-          transition={{ duration: 0.6 }}
-          className="mb-14 text-center"
-        >
-          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Pengalaman</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Perjalanan Organisasi</h2>
-        </motion.div>
+        <div className="mb-12">
+          <p className="eyebrow mb-4">Pengalaman & organisasi</p>
+          <h2 className="font-serif text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl">Menjaga alur tetap berjalan.</h2>
+          <p className="mt-4 max-w-xl text-sm leading-6 text-muted-foreground">Tanggung jawab yang bertumpu pada ketelitian, komunikasi, dan tindak lanjut sampai pekerjaan tuntas.</p>
+        </div>
 
-        <div className="max-w-2xl mx-auto relative">
-          {/* Vertical line */}
-          <div className="absolute left-5 top-2 bottom-2 w-px bg-border/60" />
-
-          <div className="space-y-10">
-            {experiences.map((exp, i) => (
-              <motion.div
-                key={exp.role}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                data-testid={`experience-${i}`}
-                className="relative pl-16"
-              >
-                {/* Timeline dot */}
-                <div
-                  className="absolute left-3.5 top-1.5 w-3 h-3 rounded-full border-2 border-background"
-                  style={{
-                    background: exp.accent === "primary"
-                      ? "rgba(59,130,246,1)"
-                      : "rgba(16,185,129,1)",
-                    boxShadow: exp.accent === "primary"
-                      ? "0 0 10px rgba(59,130,246,0.6)"
-                      : "0 0 10px rgba(16,185,129,0.6)",
-                  }}
-                />
-
-                <div className="p-6 rounded-2xl border border-border/60 bg-card/40 backdrop-blur-sm hover:border-primary/30 hover:bg-card/60 transition-all">
-                  <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
-                    <div>
-                      <h3 className="font-semibold text-foreground text-base">{exp.role}</h3>
-                      <span className="inline-block mt-1 px-2.5 py-0.5 rounded-md text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-                        {exp.type}
-                      </span>
+        <div className="relative">
+          <div className="absolute bottom-4 left-[11px] top-4 w-px bg-border md:left-[15px]" />
+          <div className="space-y-5">
+            {experiences.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <motion.article
+                  key={item.role + item.organization}
+                  initial={{ opacity: 0, x: 8 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  className="relative pl-9 md:pl-12"
+                  data-testid={`experience-${index}`}
+                >
+                  <span className="absolute left-0 top-6 z-10 flex h-6 w-6 items-center justify-center border border-primary/50 bg-background text-primary md:left-1 md:h-8 md:w-8">
+                    <Icon size={14} />
+                  </span>
+                  <div className="border border-border bg-card/45 p-5 md:p-7">
+                    <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
+                      <div>
+                        <span className="eyebrow !text-[0.62rem]">{item.type}</span>
+                        <h3 className="mt-2 text-lg font-semibold text-foreground">{item.role}</h3>
+                        <p className="mt-1 text-sm text-muted-foreground">{item.organization}</p>
+                      </div>
+                      <span className={`self-start border px-3 py-1.5 text-xs ${index === 0 ? "border-secondary/50 text-secondary" : "border-border text-muted-foreground"}`}>{item.period}</span>
                     </div>
-                    <span className="text-xs text-muted-foreground font-mono bg-background/60 px-3 py-1 rounded-full border border-border/50 shrink-0">
-                      {exp.period}
-                    </span>
+                    <ul className="mt-5 grid gap-x-8 gap-y-2 sm:grid-cols-2">
+                      {item.points.map((point) => (
+                        <li key={point} className="flex gap-2 text-sm leading-6 text-muted-foreground">
+                          <span className="mt-[0.58rem] h-1 w-1 shrink-0 bg-primary" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <ul className="space-y-1.5">
-                    {exp.points.map((point) => (
-                      <li key={point} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <span className="text-secondary mt-1 shrink-0">–</span>
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
+                </motion.article>
+              );
+            })}
           </div>
         </div>
       </div>

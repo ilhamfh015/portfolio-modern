@@ -23,8 +23,8 @@ export default function ScrollToTop() {
           transition={{ duration: 0.2 }}
           onClick={scrollUp}
           data-testid="button-scroll-to-top"
-          aria-label="Scroll to top"
-          className="fixed bottom-8 right-8 z-50 w-11 h-11 rounded-xl border border-primary/30 bg-card/80 backdrop-blur-sm text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-lg shadow-primary/10"
+          aria-label="Kembali ke atas"
+          className="fixed bottom-6 right-6 z-50 flex h-11 w-11 items-center justify-center border border-border bg-card text-primary transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground"
         >
           <ArrowUp size={18} />
         </motion.button>

@@ -1,126 +1,63 @@
 import { motion } from "framer-motion";
-import {
-  SiPhp, SiLaravel, SiMysql, SiGit, SiGithub, SiVite,
-  SiBootstrap, SiHtml5, SiJavascript
-} from "react-icons/si";
-import { Database, Code2, Wrench, Globe, Terminal, FileCode, ClipboardList } from "lucide-react";
+import { BriefcaseBusiness, ChartNoAxesColumnIncreasing, Code2, Database, Files, GitBranch, Layers3, UsersRound } from "lucide-react";
 
-const categories = [
-  {
-    title: "Backend Development",
-    icon: <Code2 size={20} />,
-    color: "from-blue-500/20 to-blue-600/5",
-    borderColor: "hover:border-blue-500/40",
-    skills: [
-      { name: "PHP", icon: <SiPhp size={18} /> },
-      { name: "Laravel", icon: <SiLaravel size={18} /> },
-      { name: "REST API", icon: <Globe size={18} /> },
-    ],
-  },
-  {
-    title: "Frontend Development",
-    icon: <Globe size={20} />,
-    color: "from-emerald-500/20 to-emerald-600/5",
-    borderColor: "hover:border-emerald-500/40",
-    skills: [
-      { name: "HTML", icon: <SiHtml5 size={18} /> },
-      { name: "CSS", icon: <FileCode size={18} /> },
-      { name: "JavaScript", icon: <SiJavascript size={18} /> },
-      { name: "Bootstrap", icon: <SiBootstrap size={18} /> },
-    ],
-  },
-  {
-    title: "Database",
-    icon: <Database size={20} />,
-    color: "from-violet-500/20 to-violet-600/5",
-    borderColor: "hover:border-violet-500/40",
-    skills: [
-      { name: "MySQL", icon: <SiMysql size={18} /> },
-    ],
-  },
-  {
-    title: "Tools & Environment",
-    icon: <Wrench size={20} />,
-    color: "from-orange-500/20 to-orange-600/5",
-    borderColor: "hover:border-orange-500/40",
-    skills: [
-      { name: "Git", icon: <SiGit size={18} /> },
-      { name: "GitHub", icon: <SiGithub size={18} /> },
-      { name: "Composer", icon: <Terminal size={18} /> },
-      { name: "Vite", icon: <SiVite size={18} /> },
-      { name: "VS Code", icon: <FileCode size={18} /> },
-    ],
-  },
-  {
-    title: "Project Management",
-    icon: <ClipboardList size={20} />,
-    color: "from-pink-500/20 to-pink-600/5",
-    borderColor: "hover:border-pink-500/40",
-    skills: [
-      { name: "System Planning", icon: <ClipboardList size={18} /> },
-      { name: "Requirement Analysis", icon: <ClipboardList size={18} /> },
-      { name: "Technical Planning", icon: <ClipboardList size={18} /> },
-      { name: "Workflow Design", icon: <ClipboardList size={18} /> },
-    ],
-  },
+const groups = [
+  { title: "Administrasi & Office", icon: Files, lead: true, skills: ["Microsoft Excel", "Microsoft Word", "Power BI"] },
+  { title: "Keterampilan pendukung", icon: BriefcaseBusiness, lead: true, skills: ["Manajemen waktu", "Pemecahan masalah", "Komunikasi", "Koordinasi", "Ketelitian", "Adaptabilitas", "Kemauan belajar"] },
+  { title: "Bahasa pemrograman", icon: Code2, skills: ["Java", "JavaScript", "Python", "PHP", "HTML", "CSS"] },
+  { title: "Framework & pengembangan aplikasi", icon: Layers3, skills: ["Spring Boot", "Next.js", "Laravel", "Full-Stack Development"] },
+  { title: "API", icon: GitBranch, skills: ["REST API", "API Integration", "API Testing"] },
+  { title: "Data & basis data", icon: Database, skills: ["PostgreSQL", "MySQL", "SQL", "Database Management System", "ETL", "Data Migration"] },
+  { title: "Tools", icon: ChartNoAxesColumnIncreasing, skills: ["Git", "GitLab", "DBeaver", "Swagger/OpenAPI", "Docker", "Pentaho Data Integration (Kettle)"] },
 ];
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 relative">
-      <div className="absolute bottom-0 left-0 w-[600px] h-[400px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none" />
-
+    <section id="skills" className="section-rule py-24 md:py-28">
       <div className="container mx-auto px-6 md:px-12">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeUp}
-          transition={{ duration: 0.6 }}
-          className="mb-14 text-center"
-        >
-          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Keahlian Teknis</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Yang Saya Kuasai</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto text-sm">
-            Teknologi dan tools yang saya gunakan untuk membangun sistem backend dan aplikasi berbasis web.
+        <div className="mb-12 grid gap-5 md:grid-cols-[1fr_0.7fr] md:items-end">
+          <div>
+            <p className="eyebrow mb-4">Keahlian</p>
+            <h2 className="font-serif text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl">Kerja rapi. Data terjaga.</h2>
+          </div>
+          <p className="max-w-md text-sm leading-6 text-muted-foreground md:justify-self-end">
+            Fondasi administrasi dan koordinasi menjadi prioritas; keterampilan sistem dan pemrograman melengkapinya.
           </p>
-        </motion.div>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {categories.map((cat, catIdx) => (
-            <motion.div
-              key={cat.title}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
-              variants={fadeUp}
-              transition={{ duration: 0.5, delay: catIdx * 0.08 }}
-              data-testid={`skill-category-${catIdx}`}
-              className={`relative p-6 rounded-2xl border border-border/60 bg-gradient-to-br ${cat.color} bg-card/30 backdrop-blur-sm transition-all duration-300 ${cat.borderColor} hover:shadow-lg hover:-translate-y-1`}
-            >
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-primary">{cat.icon}</span>
-                <h3 className="font-semibold text-foreground text-sm">{cat.title}</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {cat.skills.map((skill) => (
-                  <span
-                    key={skill.name}
-                    data-testid={`skill-${skill.name.toLowerCase().replace(/\s+/g, "-")}`}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-background/50 border border-border/50 text-xs font-medium text-foreground hover:border-primary/40 hover:text-primary transition-colors cursor-default"
-                  >
-                    <span className="text-primary/70">{skill.icon}</span>
-                    {skill.name}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+        <div className="grid gap-x-12 lg:grid-cols-2">
+          {groups.map((group, index) => {
+            const Icon = group.icon;
+            return (
+              <motion.article
+                key={group.title}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.38, delay: (index % 2) * 0.07 }}
+                className={`border-t border-border py-6 ${group.lead ? "lg:col-span-2" : ""}`}
+                data-testid={`skill-group-${index}`}
+              >
+                <div className="grid gap-4 sm:grid-cols-[220px_1fr] sm:items-start">
+                  <div className="flex items-center gap-3">
+                    <Icon size={17} className={group.lead ? "text-primary" : "text-secondary"} />
+                    <h3 className="text-sm font-semibold text-foreground">{group.title}</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-x-2 gap-y-2">
+                    {group.skills.map((skill) => (
+                      <span key={skill} className={`rounded-sm border px-3 py-1.5 text-xs ${group.lead ? "border-primary/35 bg-primary/[0.07] font-medium text-foreground" : "border-border bg-card/50 text-muted-foreground"}`}>
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.article>
+            );
+          })}
+        </div>
+        <div className="mt-6 flex items-center gap-3 text-xs text-muted-foreground">
+          <UsersRound size={15} className="text-secondary" />
+          <span>Keterampilan diterapkan dalam kolaborasi, organisasi, dan penyelesaian tugas.</span>
         </div>
       </div>
     </section>

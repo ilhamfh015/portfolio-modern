@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+:root {
+  --background: 222.2 47.4% 11.4%; --foreground: 210 40% 98%; --border: 215 27.9% 16.9%;
+  --card: 215 27.9% 16.9%; --card-foreground: 210 40% 98%; --card-border: 215 27.9% 25%;
+  --primary: 217.2 91.2% 59.8%; --primary-foreground: 210 40% 98%;
+  --secondary: 160.1 84.1% 39.4%; --secondary-foreground: 210 40% 98%;
+  --muted: 215 27.9% 25%; --muted-foreground: 214.3 31.8% 91.4%;
+  --accent: 215 27.9% 25%; --accent-foreground: 210 40% 98%; --input: 215 27.9% 25%; --ring: 217.2 91.2% 59.8%;
+  --app-font-sans: 'Inter', sans-serif; --radius: 0.5rem;
+}
+.dark { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--app-font-sans); }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes glow-pulse { 0%,100%{opacity:.4;transform:scale(1)} 50%{opacity:.65;transform:scale(1.1)} }
+@keyframes spin-slow { to{transform:rotate(360deg)} }
+@keyframes blob-breathe { 0%,100%{opacity:.35;transform:scale(1)} 50%{opacity:.55;transform:scale(1.12)} }
+.animate-float{animation:float 4s ease-in-out infinite}.animate-glow-pulse{animation:glow-pulse 5s ease-in-out infinite}.animate-spin-slow{animation:spin-slow 20s linear infinite}.animate-blob{animation:blob-breathe 7s ease-in-out infinite}.animate-blob-alt{animation:blob-breathe 9s ease-in-out infinite 2s}
