@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone, Linkedin, ArrowUpRight } from "lucide-react";
 
 const contactLinks = [
   { icon: Mail, label: "Email", value: "ilhamfh015@gmail.com", href: "mailto:ilhamfh015@gmail.com" },
-  { icon: Phone, label: "Telepon / WhatsApp", value: "085043039420", href: "https://wa.me/6285043039420" },
+  { icon: Phone, label: "Telepon / WhatsApp", value: "+62 859-4303-9420", href: "https://wa.me/6285943039420" },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/ilham-farhanul-hakim-5467bb322", href: "https://www.linkedin.com/in/ilham-farhanul-hakim-5467bb322" },
   { icon: MapPin, label: "Lokasi", value: "Bandung, Indonesia", href: "https://maps.google.com/?q=Bandung" },
 ];
