@@ -17,7 +17,7 @@ export default function Contact() {
             <p className="eyebrow mb-4">Kontak</p>
             <h2 className="font-serif text-4xl font-semibold leading-tight tracking-[-0.04em] text-foreground md:text-5xl">Mari mulai percakapan.</h2>
             <p className="mt-5 max-w-md text-base leading-7 text-muted-foreground">
-              Untuk peluang administrasi, dukungan operasional, magang, atau kolaborasi—silakan hubungi saya melalui kanal berikut.
+              Untuk peluang Software Developer, administrasi, dukungan operasional, atau kolaborasi—silakan hubungi saya melalui kanal berikut.
             </p>
           </motion.div>
           <div className="border-t border-border">

@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { BriefcaseBusiness, ChartNoAxesColumnIncreasing, Code2, Database, Files, GitBranch, Layers3, UsersRound } from "lucide-react";
 
 const groups = [
-  { title: "Administrasi & Office", icon: Files, lead: true, skills: ["Microsoft Excel", "Microsoft Word", "Power BI"] },
-  { title: "Keterampilan pendukung", icon: BriefcaseBusiness, lead: true, skills: ["Manajemen waktu", "Pemecahan masalah", "Komunikasi", "Koordinasi", "Ketelitian", "Adaptabilitas", "Kemauan belajar"] },
-  { title: "Bahasa pemrograman", icon: Code2, skills: ["Java", "JavaScript", "Python", "PHP", "HTML", "CSS"] },
-  { title: "Framework & pengembangan aplikasi", icon: Layers3, skills: ["Spring Boot", "Next.js", "Laravel", "Full-Stack Development"] },
-  { title: "API", icon: GitBranch, skills: ["REST API", "API Integration", "API Testing"] },
-  { title: "Data & basis data", icon: Database, skills: ["PostgreSQL", "MySQL", "SQL", "Database Management System", "ETL", "Data Migration"] },
-  { title: "Tools", icon: ChartNoAxesColumnIncreasing, skills: ["Git", "GitLab", "DBeaver", "Swagger/OpenAPI", "Docker", "Pentaho Data Integration (Kettle)"] },
+  { title: "Administrasi & produktivitas", icon: Files, lead: true, skills: ["Microsoft Excel", "Microsoft Word", "Document Management"] },
+  { title: "Analisis & pemrosesan data", icon: Database, lead: true, skills: ["Power BI", "Data Processing", "Data Management", "ETL", "Pentaho Data Integration (Kettle)"] },
+  { title: "Bahasa pemrograman", icon: Code2, skills: ["Java", "JavaScript", "Python", "PHP"] },
+  { title: "Pengembangan web", icon: Layers3, skills: ["HTML", "CSS", "Tailwind CSS", "Next.js", "Laravel"] },
+  { title: "Backend & API", icon: GitBranch, skills: ["Spring Boot", "REST API", "API Integration", "API Testing"] },
+  { title: "Basis data", icon: Database, skills: ["PostgreSQL", "MySQL", "SQL", "Database Management System", "Data Migration"] },
+  { title: "Tools pengembangan", icon: ChartNoAxesColumnIncreasing, skills: ["Git", "GitHub", "GitLab", "DBeaver", "Swagger/OpenAPI", "Docker"] },
+  { title: "Kompetensi profesional", icon: BriefcaseBusiness, lead: true, skills: ["Analytical Thinking", "Problem Solving", "Attention to Detail", "Time Management", "Communication", "Coordination", "Teamwork"] },
 ];
 
 export default function Skills() {
@@ -21,7 +22,7 @@ export default function Skills() {
             <h2 className="font-serif text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl">Kerja rapi. Data terjaga.</h2>
           </div>
           <p className="max-w-md text-sm leading-6 text-muted-foreground md:justify-self-end">
-            Fondasi administrasi dan koordinasi menjadi prioritas; keterampilan sistem dan pemrograman melengkapinya.
+            Kompetensi administrasi, pengolahan data, dan pengembangan software mendukung dua jalur karier yang saya minati.
           </p>
         </div>
 

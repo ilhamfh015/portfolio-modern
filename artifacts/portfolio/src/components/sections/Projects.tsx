@@ -2,10 +2,30 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
-  { title: "Log Book Padepokan", role: "Aplikasi web pencatatan kerja harian", description: "Aplikasi web mandiri untuk mencatat pekerjaan harian melalui linimasa, termasuk task bersamaan dari beberapa proyek. Dilengkapi panduan penulisan \"apa, hasil, bukti\", pengingat lembut, dan ringkasan kerja.", tags: ["Java 21", "Spring Boot", "PostgreSQL", "Next.js", "TypeScript", "Docker Compose"] },
-  { title: "Employee Time Tracking & Task Management System", role: "Full-Stack Developer", description: "Proyek pengembangan sistem pencatatan waktu kerja dan pengelolaan tugas karyawan, tercantum dalam CV.", tags: ["Full-Stack Development", "System"] },
-  { title: "Backend Service for Mobile Application", role: "Backend Developer", description: "Proyek layanan backend untuk aplikasi mobile, tercantum dalam CV.", tags: ["Backend", "REST API"] },
-  { title: "Data Migration & ETL Processing", role: "ETL / Data Processing", description: "Proyek migrasi data dan pemrosesan ETL, tercantum dalam CV.", tags: ["Data Migration", "ETL"] },
+  {
+    title: "Logbook Desktop – Internal Activity Management System",
+    role: "Frontend Developer",
+    description: "Mengembangkan antarmuka sistem pencatatan aktivitas harian berbasis linimasa. Mendukung pencatatan beberapa proyek dan task yang berlangsung bersamaan, dengan panduan pengisian serta ringkasan aktivitas.",
+    tags: ["Next.js", "TypeScript", "Responsive Web"],
+  },
+  {
+    title: "Employee Time Tracking & Task Management System",
+    role: "Full-Stack Developer",
+    description: "Sistem untuk mencatat waktu kerja dan mengelola tugas karyawan. Peran full-stack mencakup pengembangan sisi frontend dan backend sesuai kebutuhan sistem.",
+    tags: ["Full-Stack Development", "Time Tracking", "Task Management"],
+  },
+  {
+    title: "Backend Service for Mobile Application",
+    role: "Backend Developer",
+    description: "Layanan backend untuk mendukung aplikasi mobile, termasuk penyediaan REST API dan pemrosesan data yang dibutuhkan aplikasi.",
+    tags: ["Backend", "REST API", "API Integration"],
+  },
+  {
+    title: "Employee Data Migration & ETL Processing",
+    role: "ETL / Data Processing",
+    description: "Pemindahan dan pemrosesan data karyawan melalui alur ETL, dengan perhatian pada transformasi, validasi, dan konsistensi data.",
+    tags: ["ETL", "Data Migration", "Data Validation"],
+  },
   { title: "AgroMart E-Commerce System", role: "System Designer", description: "Platform e-commerce berbasis web untuk proses penjualan dan pengelolaan produk pertanian. Mencakup perancangan alur sistem, struktur basis data, analisis kebutuhan, dan desain proses bisnis.", tags: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Bootstrap"] },
   { title: "QR Attendance System", role: "Backend & System Developer", description: "Sistem absensi berbasis QR Code dengan fokus pada keamanan, validasi lokasi, dan pengelolaan absensi secara real-time. Menggunakan dynamic QR token serta validasi perangkat dan lokasi.", tags: ["PHP", "Laravel", "MySQL", "Vite", "html5-qrcode"] },
   { title: "UMKM Financial System", role: "Web Developer & System Analyst", description: "Sistem keuangan berbasis web untuk pencatatan transaksi dan laporan keuangan UMKM, termasuk pemasukan, pengeluaran, stok, serta monitoring bisnis.", tags: ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap"] },

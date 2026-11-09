@@ -3,7 +3,7 @@ import { BookOpen, GraduationCap, MapPin } from "lucide-react";
 
 const education = [
   { name: "Universitas Bina Sarana Informatika (UBSI)", program: "S1 Sistem Informasi", period: "2024–Sekarang", detail: "IPK 3,94 / 4,00" },
-  { name: "SMA Negeri 1 Ciawi", program: "Ilmu Pengetahuan Alam", period: "Lulus 2024", detail: "Peminatan IPA" },
+  { name: "SMA Negeri 1 Ciawi", program: "Ilmu Pengetahuan Alam", period: "2021–2024", detail: "Peminatan IPA" },
 ];
 
 export default function About() {
@@ -17,13 +17,13 @@ export default function About() {
               The Person Behind the Code
             </h2>
             <p className="mt-6 max-w-lg text-base leading-7 text-muted-foreground">
-              Saya nyaman menangani pekerjaan yang menuntut ketelitian, kerapian, dan koordinasi. Pengalaman saya mencakup sistem, dokumen, data, serta penggunaan tools digital untuk mendukung kebutuhan tim. Saya mudah beradaptasi dan tetap terbuka untuk belajar hal baru.
+              Saya memiliki pengalaman dalam siklus pengembangan sistem—mulai dari analisis kebutuhan, implementasi fitur, hingga pengujian—serta pengelolaan data dan dokumen. Saya terbuka untuk berkarier di bidang software development maupun administrasi dan dukungan operasional, dengan pendekatan kerja yang analitis, teliti, dan terstruktur.
             </p>
             <div className="mt-9 flex items-start gap-4 border-l-2 border-primary pl-5">
               <MapPin className="mt-1 shrink-0 text-secondary" size={18} />
               <div>
                 <p className="text-sm font-semibold text-foreground">Berbasis di Bandung</p>
-                <p className="mt-1 text-sm text-muted-foreground">Terbuka untuk peran administrasi, operasional, dan teknologi.</p>
+                <p className="mt-1 text-sm text-muted-foreground">Terbuka untuk peluang software development, administrasi, dan dukungan operasional.</p>
               </div>
             </div>
           </motion.div>

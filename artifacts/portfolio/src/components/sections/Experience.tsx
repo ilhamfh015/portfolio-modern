@@ -5,31 +5,31 @@ const experiences = [
   {
     role: "Software Engineer Intern",
     organization: "PT Padepokan Tujuh Sembilan",
-    period: "Agustus–November 2026 · Berlangsung",
+    period: "Agustus–November 2026",
     type: "Magang",
     icon: BriefcaseBusiness,
     points: [
-      "Memahami kebutuhan tugas dan menyelesaikannya di bawah arahan Project Manager.",
-      "Menggunakan tools digital untuk menangani informasi sistem dan kebutuhan tim.",
-      "Memeriksa serta memvalidasi hasil, lalu mendokumentasikan perubahan dan kendala.",
-      "Berkoordinasi dengan tim dan memantau pekerjaan hingga selesai dengan cermat.",
+      "Berpartisipasi dalam siklus pengembangan sistem: analisis kebutuhan, implementasi fitur, pengujian, dan evaluasi fungsionalitas.",
+      "Mengembangkan fitur aplikasi web serta layanan backend berdasarkan spesifikasi dan kebutuhan proyek.",
+      "Mengelola database, mengintegrasikan API, melakukan debugging, dan memvalidasi fungsi sistem.",
+      "Berkoordinasi dengan tim pengembang dan Project Manager untuk membahas spesifikasi, meninjau implementasi, dan menyelesaikan kendala.",
     ],
   },
   {
     role: "Wakil Presiden",
     organization: "BEM Universitas Bina Sarana Informatika",
-    period: "Organisasi kampus",
+    period: "2026–2027",
     type: "Kepemimpinan & koordinasi",
     icon: UsersRound,
-    points: ["Pengalaman organisasi sebagai Wakil Presiden BEM UBSI."],
+    points: [],
   },
   {
     role: "Sekretaris",
     organization: "UKM Bahasa Inggris & Jepang",
-    period: "Organisasi kampus",
+    period: "2025–2026",
     type: "Administrasi",
     icon: ClipboardCheck,
-    points: ["Pengalaman organisasi sebagai Sekretaris UKM Bahasa Inggris & Jepang."],
+    points: [],
   },
   {
     role: "Ketua Pelaksana — BSI Flash",
@@ -47,7 +47,7 @@ export default function Experience() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-12">
           <p className="eyebrow mb-4">Pengalaman & organisasi</p>
-          <h2 className="font-serif text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl">Menjaga alur tetap berjalan.</h2>
+          <h2 className="font-serif text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-5xl">Pengalaman kerja & kepemimpinan.</h2>
           <p className="mt-4 max-w-xl text-sm leading-6 text-muted-foreground">Tanggung jawab yang bertumpu pada ketelitian, komunikasi, dan tindak lanjut sampai pekerjaan tuntas.</p>
         </div>
 
@@ -78,14 +78,16 @@ export default function Experience() {
                       </div>
                       <span className={`self-start border px-3 py-1.5 text-xs ${index === 0 ? "border-secondary/50 text-secondary" : "border-border text-muted-foreground"}`}>{item.period}</span>
                     </div>
-                    <ul className="mt-5 grid gap-x-8 gap-y-2 sm:grid-cols-2">
-                      {item.points.map((point) => (
-                        <li key={point} className="flex gap-2 text-sm leading-6 text-muted-foreground">
-                          <span className="mt-[0.58rem] h-1 w-1 shrink-0 bg-primary" />
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
+                    {item.points.length > 0 && (
+                      <ul className="mt-5 grid gap-x-8 gap-y-2 sm:grid-cols-2">
+                        {item.points.map((point) => (
+                          <li key={point} className="flex gap-2 text-sm leading-6 text-muted-foreground">
+                            <span className="mt-[0.58rem] h-1 w-1 shrink-0 bg-primary" />
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </motion.article>
               );

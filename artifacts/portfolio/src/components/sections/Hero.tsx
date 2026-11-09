@@ -29,14 +29,14 @@ export default function Hero() {
             <span className="text-primary">Hakim.</span>
           </motion.h1>
           <motion.p variants={fade} className="mt-7 max-w-2xl text-lg leading-relaxed text-foreground/75 md:text-xl">
-            Mahasiswa Sistem Informasi yang nyaman bekerja dengan dokumen, informasi, dan data secara akurat serta terorganisir. Terbiasa berkoordinasi, menggunakan perangkat digital, dan cepat beradaptasi.
+            Mahasiswa Sistem Informasi dengan pengalaman dalam pengembangan aplikasi web, pengelolaan data, dan administrasi. Terbuka untuk peluang Software Developer maupun administrasi dan dukungan operasional, dengan bekal analisis, ketelitian, serta koordinasi.
           </motion.p>
           <motion.div variants={fade} className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2"><MapPin size={15} className="text-secondary" />Bandung</span>
             <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
             <span>Administrasi & dukungan operasional</span>
             <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
-            <span>Software Engineering</span>
+            <span>Pengembangan software</span>
           </motion.div>
           <motion.div variants={fade} className="mt-9 flex flex-wrap gap-3">
             <Button size="lg" onClick={() => scrollTo("experience")} className="rounded-md bg-primary px-5 font-semibold text-primary-foreground hover:bg-primary/90">
