@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
+  { title: "Log Book Padepokan", role: "Aplikasi web pencatatan kerja harian", description: "Aplikasi web mandiri untuk mencatat pekerjaan harian melalui linimasa, termasuk task bersamaan dari beberapa proyek. Dilengkapi panduan penulisan \"apa, hasil, bukti\", pengingat lembut, dan ringkasan kerja.", tags: ["Java 21", "Spring Boot", "PostgreSQL", "Next.js", "TypeScript", "Docker Compose"] },
   { title: "Employee Time Tracking & Task Management System", role: "Full-Stack Developer", description: "Proyek pengembangan sistem pencatatan waktu kerja dan pengelolaan tugas karyawan, tercantum dalam CV.", tags: ["Full-Stack Development", "System"] },
   { title: "Backend Service for Mobile Application", role: "Backend Developer", description: "Proyek layanan backend untuk aplikasi mobile, tercantum dalam CV.", tags: ["Backend", "REST API"] },
   { title: "Data Migration & ETL Processing", role: "ETL / Data Processing", description: "Proyek migrasi data dan pemrosesan ETL, tercantum dalam CV.", tags: ["Data Migration", "ETL"] },
